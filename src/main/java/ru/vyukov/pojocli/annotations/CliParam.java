@@ -26,4 +26,17 @@ public @interface CliParam {
 	 * @return
 	 */
 	boolean requared() default true;
+
+	/**
+	 * Help message
+	 * @return
+	 */
+	String help() default "no help message";
+
+	/**
+	 * Generic type for Collections params
+	 * @return
+	 */
+	Class<?> propertyType() default DefaultPropertyType.class;
+
 }

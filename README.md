@@ -22,6 +22,9 @@ public class MyPojo {
 	@CliParam(name = "-port")
 	private int port;
 	
+	@CliParam(name = "-list", propertyType=Integer.class)
+	private List<Integer> list;
+	
 	... get/set
 }
 
